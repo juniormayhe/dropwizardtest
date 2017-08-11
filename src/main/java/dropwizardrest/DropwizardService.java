@@ -28,13 +28,11 @@ public class DropwizardService extends Service<DropwizardRestConfiguration> {
 	public void run(DropwizardRestConfiguration configuration, Environment env) throws Exception {
 
 		
-		/*
-		 * 
 		Mongo mongo = new Mongo(configuration.mongohost, configuration.mongoport);
         MongoManaged mongoManaged = new MongoManaged(mongo);
         env.manage(mongoManaged);
         env.addHealthCheck(new MongoHealthCheck(mongo));
-        */
+        
  
 		//register JAX resource
 		env.addResource(new CustomerResource());

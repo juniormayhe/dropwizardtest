@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  
 import com.yammer.dropwizard.config.Configuration;
 
-public class DropwizardRestConfiguration extends Configuration {
+public class AppConfiguration extends Configuration {
 	@JsonProperty
     @NotEmpty
     public String mongohost = "localhost";
